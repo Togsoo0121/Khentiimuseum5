@@ -1,0 +1,45 @@
+
+/* Бүхэл апп-д ерөнхий загвар тохируулах */
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+/* Музейн танилцуулга хуудасны онцгой загвар */
+.museum-intro {
+  @apply p-6 bg-white rounded-2xl shadow-md;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4 text-museum-blue;
+}
+
+.section-content {
+  @apply text-base leading-relaxed;
+}
+
+/* Навигацийн цэс */
+.navigation {
+  @apply fixed bottom-0 left-0 right-0 flex justify-around bg-white border-t shadow p-2 z-50;
+}
+
+.nav-button {
+  @apply flex flex-col items-center text-sm text-gray-600 hover:text-museum-blue;
+}
+
+.nav-button-active {
+  @apply text-museum-blue font-semibold;
+}
+
+/* Таних онцгой өнгө (өөрчилж болно) */
+.text-museum-blue {
+  color: #1e40af; /* Tailwind-ийн blue-800 */
+}
+
+/* Зураг, бичвэр зэрэг layout-т зориулсан нэмэлт тохиргоо */
+.card {
+  @apply bg-white rounded-xl shadow-md overflow-hidden;
+}
+
+.card img {
+  @apply w-full h-auto object-cover;
+}
